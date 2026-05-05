@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:alexhuie.weebly.com)"
+      "WebFetch(domain:alexhuie.weebly.com)",
+      "WebFetch(domain:code.claude.com)"
     ]
   }
 }
