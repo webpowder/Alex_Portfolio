@@ -27,6 +27,20 @@ a:hover {
   color: #555;
 }
 
+/* Standard blue/purple link behavior */
+a.standard-link {
+  color: #0066cc;
+}
+a.standard-link:visited {
+  color: #800080;
+}
+a.standard-link:hover {
+  color: #003d7a;
+}
+a.standard-link:active {
+  color: #cc0000;
+}
+
 /* ── Navbar ───────────────────────────────────────── */
 .navbar {
   padding: 1.25rem 0;
@@ -165,6 +179,10 @@ a:hover {
 /* ── Case Study Pages ─────────────────────────────── */
 .case-study {
   padding: 2rem 0 4rem;
+}
+.case-study-meta p {
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
 }
 .case-study .disclaimer {
   font-size: 0.875rem;
