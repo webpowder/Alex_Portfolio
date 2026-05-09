@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="referrer" content="no-referrer">
   <title>Alex Huie - UX Researcher</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -46,8 +48,8 @@ Ensure it matched weebly
 
           <div class="mt-4">
             <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Let's Connect</h3>
-            <p style="margin-bottom: 0.25rem; line-height: 1.4;"><strong>Email</strong> - <a href="mailto:alexhuie12@gmail.com" class="standard-link">alexhuie12[at]gmail.com</a></p>
-            <p style="margin-bottom: 0; line-height: 1.4;"><strong>LinkedIn</strong> - <a href="https://www.linkedin.com/in/alex-huie-817015193/" target="_blank" rel="noopener" class="standard-link">https://www.linkedin.com/in/alex-huie-817015193/</a></p>
+            <p style="margin-bottom: 0.25rem; line-height: 1.4;"><strong>Email</strong> - <a href="mailto:alexhuie12&#64;gmail.com" class="standard-link">alexhuie12[at]gmail[dot]com</a></p>
+            <p style="margin-bottom: 0; line-height: 1.4;"><strong>LinkedIn</strong> - <a href="https://www.linkedin.com/in/alex-huie-817015193/" target="_blank" rel="noopener" class="standard-link">linkedin[dot]com/in/alex-huie-817015193</a></p>
           </div>
         </div>
       </div>
@@ -55,5 +57,9 @@ Ensure it matched weebly
   </section>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
 </body>
 </html>

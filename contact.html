@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="referrer" content="no-referrer">
   <title>Contact - Alex Huie</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -41,10 +43,14 @@ Ensure it matched weebly
 
   <!-- Contact Content -->
   <div class="container contact-content">
-    <p><strong>Email:</strong> <a href="mailto:alexhuie12@gmail.com" class="standard-link">alexhuie12[at]gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alex-huie-817015193/" target="_blank" rel="noopener" class="standard-link">https://www.linkedin.com/in/alex-huie-817015193/</a></p>
+    <p><strong>Email:</strong> <a href="mailto:alexhuie12&#64;gmail.com" class="standard-link">alexhuie12[at]gmail[dot]com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alex-huie-817015193/" target="_blank" rel="noopener" class="standard-link">linkedin[dot]com/in/alex-huie-817015193</a></p>
   </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
 </body>
 </html>
