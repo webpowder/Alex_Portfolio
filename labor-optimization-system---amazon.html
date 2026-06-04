@@ -11,17 +11,6 @@
 </head>
 <body>
 
-<!--Change Log--
-Last updated 5/11/26
-- Added case study metadata (Overview, Role, Methods, Tools, Partners)
-- Updated Canva embed link to use standard-link class
-- Added 1px black border to Canva embed
-- Added loading indicator for Canva embed
-- Fixed spelling: "Deisgn" to "Design"
-- Added security meta tags (HTTPS enforcement, no-referrer)
-- Added right-click protection
--->
-
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-light bg-white">
     <div class="container">
@@ -58,10 +47,10 @@ Last updated 5/11/26
 
     <!-- Replace the src below with your Canva embed URL -->
     <div style="position: relative;">
-      <div id="canva-loading-2" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.1rem; color: #666; z-index: 1;">Loading...</div>
       <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform; border: 1px solid #000;">
+        <div id="canva-loading-2" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.1rem; color: #666; z-index: 10; background: white; padding: 0.5rem 1rem; border-radius: 4px;">Loading...</div>
         <iframe id="canva-iframe-2" loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
                 src="https://www.canva.com/design/DAG9yN_YBxQ/m4CxE8hgRKwsnurf9nWedw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
         </iframe>
