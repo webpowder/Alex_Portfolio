@@ -99,8 +99,41 @@
     <a href="my-portfolio.html#pill-buddy" class="btn btn-dark">&larr; Back to Portfolio</a>
   </div>
 
+  <!-- Footer -->
+  <footer style="background-color: #f8f9fa; border-top: 2px solid #e0e0e0; padding: 3rem 0 2rem; margin-top: 4rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3" style="text-align: left;">
+          <h4 style="font-size: 1rem; color: #0077b6; margin-bottom: 1rem; font-weight: 600;">Navigation</h4>
+          <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+            <a href="index.html" style="color: #555; text-decoration: none; font-size: 0.9rem;">Home</a>
+            <a href="my-portfolio.html" style="color: #555; text-decoration: none; font-size: 0.9rem;">My Portfolio</a>
+            <a href="about.html" style="color: #555; text-decoration: none; font-size: 0.9rem;">About</a>
+            <a href="contact.html" style="color: #555; text-decoration: none; font-size: 0.9rem;">Contact</a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3" style="text-align: left;">
+          <h4 style="font-size: 1rem; color: #0077b6; margin-bottom: 1rem; font-weight: 600;">Connect</h4>
+          <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+            <span id="footer-email" style="font-size: 0.9rem;"></span>
+            <a href="https://www.linkedin.com/in/alex-huie-817015193/" target="_blank" rel="noopener" style="color: #0077b6; text-decoration: none; font-size: 0.9rem;">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div style="border-top: 1px solid #e0e0e0; margin-top: 2rem; padding-top: 1.5rem; text-align: center;">
+        <p style="color: #888; font-size: 0.875rem; margin: 0;">© 2026 Alex Huie - UX Researcher</p>
+      </div>
+    </div>
+  </footer>
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script>
+    // Construct email to avoid bot scraping
+    const user = 'alexhuie12';
+    const domain = 'gmail.com';
+    const email = user + '@' + domain;
+    document.getElementById('footer-email').textContent = email;
+
     // Disable right-click
     document.addEventListener('contextmenu', event => event.preventDefault());
   </script>
