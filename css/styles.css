@@ -374,4 +374,56 @@ a.standard-link:active {
   .page-header {
     padding: 3rem 0 1.5rem;
   }
+
+  /* Featured project images - make full width on mobile */
+  .row.align-items-center img[style*="width: 75%"] {
+    width: 100% !important;
+  }
+
+  /* Stats bar spacing */
+  section[style*="background-color: #f8f9fa"] .row.text-center > div {
+    margin-bottom: 2rem !important;
+  }
+  section[style*="background-color: #f8f9fa"] .row.text-center > div:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Skills section spacing */
+  section[style*="padding: 4rem 0"] {
+    padding: 3rem 0 !important;
+  }
+
+  /* Contact cards - ensure proper stacking */
+  .col-md-6.mb-4 {
+    margin-bottom: 2rem !important;
+  }
+
+  /* About page education grid */
+  .col-md-4.mb-3 {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Extra small screens - further optimizations */
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  h1 { font-size: 1.75rem; }
+
+  /* Reduce stats bar font size on very small screens */
+  section[style*="background-color: #f8f9fa"] div[style*="font-size: 2rem"] {
+    font-size: 1.5rem !important;
+  }
+
+  /* Adjust button padding for small screens */
+  .btn-dark {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  /* Reduce section padding on small screens */
+  .hero {
+    padding: 2rem 0 1.5rem;
+  }
 }
