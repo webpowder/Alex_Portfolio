@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:alexhuie.weebly.com)",
-      "WebFetch(domain:code.claude.com)"
+      "WebFetch(domain:code.claude.com)",
+      "Read(//Users/alex/Desktop/**)",
+      "Read(//Users/alex/.claude/**)"
     ]
   }
 }
