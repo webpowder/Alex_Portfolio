@@ -225,7 +225,7 @@ a.standard-link:active {
 
 /* ── About Page ───────────────────────────────────── */
 .about-content {
-  padding: 0 0 4rem;
+  padding: 0 1rem 4rem;
   max-width: 720px;
 }
 .about-content p {
