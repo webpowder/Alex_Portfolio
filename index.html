@@ -43,7 +43,7 @@
 
           <div class="mt-4">
             <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Let's Connect</h3>
-            <p style="margin-bottom: 0.25rem; line-height: 1.4;"><strong>Email</strong> - alexhuie12[at]gmail.com</p>
+            <p style="margin-bottom: 0.25rem; line-height: 1.4;"><strong>Email</strong> - <span id="email-display"></span></p>
             <p style="margin-bottom: 0; line-height: 1.4;"><strong>LinkedIn</strong> - <a href="https://www.linkedin.com/in/alex-huie-817015193/" target="_blank" rel="noopener" class="standard-link">linkedin.com/in/alex-huie-817015193</a></p>
           </div>
         </div>
@@ -171,6 +171,12 @@
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script>
+    // Construct email to avoid bot scraping
+    const user = 'alexhuie12';
+    const domain = 'gmail.com';
+    const email = user + '@' + domain;
+    document.getElementById('email-display').textContent = email;
+
     // Disable right-click
     document.addEventListener('contextmenu', event => event.preventDefault());
   </script>

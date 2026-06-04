@@ -30,18 +30,51 @@
   </nav>
 
   <!-- Page Header -->
-  <div class="container page-header" style="text-align: left;">
-    <h1>Get in Touch</h1>
+  <div class="page-header">
+    <div class="container" style="text-align: center;">
+      <h1 style="color: var(--accent-color);">Let's Connect</h1>
+      <p style="color: var(--text-medium); margin-top: 1rem; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">I'm currently seeking UX research opportunities where I can drive product strategy through deep user insights. I'd love to hear from you!</p>
+    </div>
   </div>
 
   <!-- Contact Content -->
-  <div class="container contact-content" style="text-align: left;">
-    <p><strong>Email:</strong> alexhuie12[at]gmail.com</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alex-huie-817015193/" target="_blank" rel="noopener" class="standard-link">linkedin.com/in/alex-huie-817015193</a></p>
+  <div class="container" style="padding: 2rem 0 4rem;">
+
+    <!-- Contact Methods -->
+    <div class="row" style="max-width: 800px; margin: 0 auto;">
+      <div class="col-md-6 mb-4">
+        <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); height: 100%; border-top: 4px solid var(--accent-color);">
+          <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <div style="background-color: var(--accent-color); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; font-size: 1.5rem;">✉️</div>
+            <h3 style="margin: 0; font-size: 1.3rem;">Email</h3>
+          </div>
+          <p style="color: var(--text-medium); margin-bottom: 1rem; font-size: 0.95rem;">Best for detailed inquiries and sharing opportunities</p>
+          <p style="font-size: 1.1rem; font-weight: 500; margin: 0;" id="email-display"></p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); height: 100%; border-top: 4px solid var(--accent-color);">
+          <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <div style="background-color: var(--accent-color); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; font-size: 1.5rem;">💼</div>
+            <h3 style="margin: 0; font-size: 1.3rem;">LinkedIn</h3>
+          </div>
+          <p style="color: var(--text-medium); margin-bottom: 1rem; font-size: 0.95rem;">Connect professionally and see my latest updates</p>
+          <a href="https://www.linkedin.com/in/alex-huie-817015193/" target="_blank" rel="noopener" class="btn btn-dark" style="width: 100%;">View Profile</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script>
+    // Construct email to avoid bot scraping
+    const user = 'alexhuie12';
+    const domain = 'gmail.com';
+    const email = user + '@' + domain;
+    document.getElementById('email-display').textContent = email;
+
     // Disable right-click
     document.addEventListener('contextmenu', event => event.preventDefault());
   </script>
