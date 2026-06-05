@@ -246,7 +246,7 @@ a.standard-link:active {
 
 /* ── Case Study Pages ─────────────────────────────── */
 .case-study {
-  padding: 2rem 0 4rem;
+  padding: 2rem 1rem 4rem;
 }
 .case-study-meta p {
   margin-bottom: 0.5rem;
